@@ -1,0 +1,34 @@
+{
+  "navigation": [
+    {
+      "path": "/",
+      "name": "Home"
+    },
+    {
+      "path": "/products",
+      "name": "Products",
+      "subnav": [
+        {
+          "path": "/react-courses",
+          "name": "React-Courses"
+        },
+        {
+          "path": "/js-courses",
+          "name": "JsCourses"
+        },
+        {
+          "path": "/marketing-courses",
+          "name": "MarketingCourses"
+        }
+      ]
+    },
+    {
+      "path": "/contact",
+      "name": "Contact"
+    },
+    {
+      "path": "/portfolio",
+      "name": "Porfolio"
+    }
+  ]
+}

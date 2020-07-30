@@ -1,0 +1,16 @@
+.navigation_wrapper {
+  display: flex;
+  background-color: aquamarine;
+  justify-content: center;
+  margin: 2%;
+}
+
+.navigation_items {
+  background-color: blueviolet;
+  display: inline-block;
+  border: 1px solid red;
+  width: 120px;
+  margin-left: 20px;
+  padding: 3px;
+  align-items: unset;
+}
