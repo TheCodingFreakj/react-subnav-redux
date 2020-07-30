@@ -1,34 +1,17 @@
 {
   "navigation": [
+    { "id": 1, "path": "/", "name": "Home" },
     {
-      "path": "/",
-      "name": "Home"
-    },
-    {
+      "id": 2,
       "path": "/products",
       "name": "Products",
       "subnav": [
-        {
-          "path": "/react-courses",
-          "name": "React-Courses"
-        },
-        {
-          "path": "/js-courses",
-          "name": "JsCourses"
-        },
-        {
-          "path": "/marketing-courses",
-          "name": "MarketingCourses"
-        }
+        { "id": 1, "path": "/react-courses", "value": "React" },
+        { "id": 2, "path": "/js-courses", "value": "JsCourses" },
+        { "id": 3, "path": "/marketing-courses", "value": "Marketing" }
       ]
     },
-    {
-      "path": "/contact",
-      "name": "Contact"
-    },
-    {
-      "path": "/portfolio",
-      "name": "Porfolio"
-    }
+    { "id": 3, "path": "/contact", "name": "Contact" },
+    { "id": 4, "path": "/portfolio", "name": "Porfolio" }
   ]
 }

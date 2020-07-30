@@ -8,9 +8,24 @@
 .navigation_items {
   background-color: blueviolet;
   display: inline-block;
-  border: 1px solid red;
   width: 120px;
-  margin-left: 20px;
   padding: 3px;
-  align-items: unset;
+}
+
+.navigation_items a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+ul.dd_list {
+  padding: 2% 2%;
+}
+
+.dd_lst_item {
+  text-decoration: none;
+  list-style: none;
+  padding: 2% 2%;
+  background-color: blue;
+  margin: 5%;
 }

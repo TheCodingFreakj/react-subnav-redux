@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import "./header.css";
-import SubNavigation from "./subnav";
+import Dropdown from "./dropdown";
 
 class Header extends React.Component {
   state = {
@@ -22,17 +22,26 @@ class Header extends React.Component {
   renderNavbar = () => {
     return this.state.nav.map((item, i) => (
       <div key={i} className="navigation_items">
-        <Link to={item.path}>{item.name}</Link>
-        {/* <div>{item.name}</div> */}
-        {item.subnav && <SubNavigation items={item.subnav} />}
-        {/* <SubNavigation items={item.subnav} /> */}
+        {item.subnav ? (
+          <Link to={item.path}>
+            <Dropdown items={item.subnav} />
+          </Link>
+        ) : (
+          <Link to={item.path}>{item.name}</Link>
+        )}
       </div>
     ));
   };
   render() {
+    //console.log(this.state.nav);
     console.log(this.state.nav);
 
-    return <div className="navigation_wrapper">{this.renderNavbar()}</div>;
+    return (
+      <div className="navigation_wrapper">
+        {this.renderNavbar()}
+        <hr></hr>
+      </div>
+    );
   }
 }
 export default Header;
