@@ -1,0 +1,50 @@
+.sub_nav {
+  background-color: brown;
+  padding: 2%;
+  display: flex;
+  justify-content: center;
+}
+
+.sub_nav a {
+  color: azure;
+  text-decoration: none;
+  margin: 3%;
+  font-size: 2.3rem;
+}
+.sub_nav_wrapper {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_nav_wrapper-page {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+
+.sub_nav_wrapper,
+.sub_nav_wrapper-page h2 {
+  text-align: center;
+}
+.sub_nav_wrapper a {
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+.sub_nav_wrapper-page a {
+  color: azure;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  font-size: 1.3rem;
+}
+
+.inner_wrapper {
+  background-color: blueviolet;
+}
